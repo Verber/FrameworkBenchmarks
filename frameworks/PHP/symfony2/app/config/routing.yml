@@ -6,6 +6,10 @@ _db:
     pattern:  /db
     defaults: { _controller: SkamanderBenchmarkBundle:Bench:db }
 
+_db_updates:
+    pattern:  /updates
+    defaults: { _controller: SkamanderBenchmarkBundle:Bench:updates }
+
 _dbRaw:
     pattern:  /db-raw
     defaults: { _controller: SkamanderBenchmarkBundle:Bench:dbRaw }
