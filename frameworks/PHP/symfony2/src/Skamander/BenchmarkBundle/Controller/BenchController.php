@@ -59,9 +59,8 @@ class BenchController extends Controller
 
         $em = $this->getDoctrine()->getEntityManager();
         foreach ($worlds as $world) {
-            $newWorld = clone $world;
-            $newWorld->setRandomNumber(mt_rand(1, 10000));
-            $em->persist($newWorld);
+            $world->setRandomNumber(mt_rand(1, 10000));
+            $em->persist($world);
         }
         $em->flush();
 
